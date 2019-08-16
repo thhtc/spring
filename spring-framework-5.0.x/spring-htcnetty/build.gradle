@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'org.springframework'
+version '5.0.15.BUILD-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/io.netty/netty-all
+    //compile group: 'io.netty', name: 'netty-all', version: '4.1.37.Final'
+    compile group: 'io.netty', name: 'netty-all', version: '4.1.10.Final'
+    //compile(project(":spring-context"))
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
